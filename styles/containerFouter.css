@@ -1,5 +1,5 @@
-:root {
- --border: 5%  5% 5% 5%;
+ :root{
+--border: 5%  5% 5% 5%;
  --borderBottom: 0% 0% 5% 5%;
  --borderTop: 5% 5% 0% 0%;
  --color: rgb(3, 7, 12);
@@ -13,20 +13,17 @@
  --padding: 1em;
  --paddingTop: .3em;
  --paddingLeft: .5em;
- --paddingBottom: .3em
+ --paddingBottom: .3em;
  --paddingRigth: .3em;
- --height: 400px;
- --width: 300px;
  --box-shadow: 4px 6px 2px 3px rgb(240, 240, 240);
 }
-
-.container_2 {
-    display: flex;
+.container_2{
+    display: flex
 }
 .title_container_2 {
     font-family: var(--fontFamily);
-    font-size: 15px;
-    margin-left: 2em;
+    font-size: 25px;
+    margin-left: 1em;
 }
 /*--------------------première et troisième div------------------------------*/
 .container_2_bloc_1 {

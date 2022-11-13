@@ -1,9 +1,20 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,100&display=swap');
+
+:root {
+    --margin-left: 1em;
+    --padding-left: 2em;
+    --padding-top: 2em;
+}
+body {
+    margin-left: 2em;
+}
+
 header {
     display: flex;
-    padding-top: 2em;
-    padding-left: 2em;
+    padding-top: 1em;
+    padding-left: var(--padding-left);
 }
 .entete_elt {
     display: flex;
@@ -14,30 +25,27 @@ header {
 a {
     border-style: none;
 }
-.hebergement_activite{
+.hebergement_activite {
     display: flex;
-    margin-left: 190%;
+    margin-left:  190%;
 }
 .hebergement_activite > div {
     padding-left: 2em;
     padding-top: 2em;
     padding-right: 2em;
 }
-.container {
-    padding: 1em;
-}
 .p1 {
-    font-weight: bold;
+    font-family: 'Raleway';
+}
+.p2 {
+    padding-left: 1em;
 }
 
 /* j'utillise calc() pour ne pas avoir le signe '-' */
-.p2 {
-    margin-top: calc(-1.5em 1em);
-    font-size: 125%;
-}
 .recherche {
-    margin-top: calc(-1.5em 1em);
+    margin-left: 1em;
     display: flex;
+    margin-bottom: 1em;
 }
 .icon {
     background: #DEEBFF;
@@ -59,7 +67,7 @@ a {
     font-size: 30px;
     width: 200px;
     height: 50px;
-    margin-top: 2.55px;
+    margin-top: 2px;
     border: none;
     background: rgb(252, 252, 252);
 }
@@ -71,13 +79,25 @@ a {
     color: aliceblue;
     font-size: 180%;
 }
+.labelRecherche > label {
+    font-size: 75%;
+    width: 8%;
+}
 .filter {
     display: flex;
 }
-.filter_p {
-    margin: 2em;
-    font-family:  'Raleway';
+.filter_text_title {
+    padding: 1em;
+    margin-top: 1.5em;
+font-size: 1em;
+font-family: 'Raleway';
 }
+/*
+.filter_p {
+    padding: 1em;
+    font-weight: 'Raleway'
+}
+*/
 .filter_contern {
     margin: 1em;
     display: flex;
@@ -92,7 +112,7 @@ a {
     font-size: 100%;
     padding: 1em;
     width: 2em;
-    margin-left: -.2em;
+    margin-left: calc(1em - 1.2em);
 }
 .filter_icon > i {
     color: #032a68;
@@ -106,6 +126,7 @@ font-family: 'Raleway';
 }
 .info {
     display: flex;
+    margin-left: 1em;
 }
 .info_icon {
     border: .1em solid #c8cacc;
@@ -222,7 +243,7 @@ font-family: 'Raleway';
     margin-top: 1em;
     margin-left: 3em;
     padding-top: .5em;
-    padding-bottom: -1em;
+    padding-bottom: calc(1em - 2em);
 }
 .showcase_rigth_bloc {
     margin: 0em;
