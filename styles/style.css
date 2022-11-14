@@ -1,14 +1,21 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,100&display=swap');
+
 
 :root {
     --margin-left: 1em;
     --padding-left: 2em;
     --padding-top: 2em;
 }
+/*
 body {
     margin-left: 2em;
+    background: url("../imgs/advit.jpg") fixed no-repeat, rgba(155, 200, 200, 0.1);
+}
+*/
+body {
+    margin-left: 2em;
+    background: rgba(155, 200, 200, 0.1) , fixed no-repeat;
 }
 
 header {
@@ -71,6 +78,9 @@ a {
     border: none;
     background: rgb(252, 252, 252);
 }
+input:focus{
+    background-color: brown;
+}
 .labelRecherche {
     width: 10%;
     padding: .25em;
@@ -92,12 +102,6 @@ a {
 font-size: 1em;
 font-family: 'Raleway';
 }
-/*
-.filter_p {
-    padding: 1em;
-    font-weight: 'Raleway'
-}
-*/
 .filter_contern {
     margin: 1em;
     display: flex;
@@ -153,6 +157,11 @@ font-family: 'Raleway';
 }
 
 /* ----------------------------LEFT--------------------------------*/
+/*
+.showcase_left_bloc:nth-child(2){
+    background-color: #032a68;
+}
+*/
 .showcase_left {
     float: left;
     background: #eef1f3;
@@ -173,7 +182,7 @@ font-family: 'Raleway';
     background: #faf8f8;
     border-radius: 10% 10% 10% 10%;
 }
-.showcase_left_bloc > div > img {
+.showcase_left_bloc > div > a > img {
     border-radius: 10% 10% 0% 0%;
     margin: .5em;
     width: 200px;
@@ -248,7 +257,7 @@ font-family: 'Raleway';
 .showcase_rigth_bloc {
     margin: 0em;
 }
-.showcase_rigth_bloc > div {
+.showcase_rigth_bloc > div{
     display: flex;
     width: 350px;
     height: 150px;
@@ -256,10 +265,29 @@ font-family: 'Raleway';
     background: #faf8f8;
     border-radius: 5% 5% 5% 5%;
 }
-.showcase_rigth_bloc > div > img {
+.showcase_rigth_bloc > div > a {
+    position: relative;
+    width: 200px;
+    height: 150px;
+}
+a:hover {
+    box-shadow: 2px 5px rgb(190, 164, 164);
+    opacity: .3;
+}
+img:hover {
+    transform: translate(-5%, -5%);
+}
+  .showcase_rigth_bloc > div > a:hover image {
+    opacity: .3;
+  }
+.showcase_rigth_bloc > div > a > img {
+    opacity: 1;
     border-radius: 10% 0% 0% 10%;
     margin: .5em;
-    width: 40%;
+    width: 95%;
+    height: 135px;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 .p1 {
     font-family: 'Raleway';
